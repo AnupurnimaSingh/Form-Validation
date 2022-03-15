@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+    <form action="" name = "myForm" >
+    <div class="title">Contact Information</div>
+    <div>
+    <label for="username">User Name</label>
+    <input
+        type="text"
+        name="username"
+        placeholder="Name"/>
+    <div class="error"></div>
+    </div>
+    <div>
+    <label for="email">Email</label>
+    <input
+        type="email"
+        name="email"
+        placeholder="abc@gmail.com" />
+    <div class="error"></div>
+    <div>
+        <label for="mobilenumber">Mobile Number</label>
+        <input
+            type="text"
+            name="mobilenumber"
+            placeholder="Mobile Number" />
+        <div class="error"></div>
+        </div>
+    </div>
+    <div>
+    <label for="password">Password</label>
+    <input pattern=".{8,12}" required title="8 to 12 characters"
+        type="password"
+        name="password"
+        placeholder="Password" />
+    <div class="error"></div>
+    </div>
+    <p id="demo" style="color:red; text-align:center"></p>
+    <button type="submit" onclick="validate();">Submit</button>
+    </form>    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
